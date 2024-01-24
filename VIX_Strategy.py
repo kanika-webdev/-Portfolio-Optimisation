@@ -3,7 +3,7 @@ import quandl
 import matplotlib.pyplot as plt
 import math
 
-
+#This file fetch data.
 def fetch_data(string1, string2, string3, filename):
     w = quandl.get(string1, authtoken = string2, start_date = string3)
     w.to_csv(filename)

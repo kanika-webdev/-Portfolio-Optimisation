@@ -6,6 +6,7 @@ import quandl
 
 def variance_calculator(series, series_average, win_len):
     sma = win_len
+    # Now doing the changes
     temp = series.subtract(series_average) # Difference a-b
     temp2 = temp.apply(lambda x:x**2)  # Square them.. (a-b)^2
     temp3 = temp2.rolling(sma - 1).mean() # Summation (a-b)^2 / (sma - 1)

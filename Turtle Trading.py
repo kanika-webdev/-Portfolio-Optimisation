@@ -2,7 +2,7 @@
 
 #Import the necesary libraries
 
-# To get the closing prices data
+# To get the closing prices data of data
 from pandas_datareader import data as pdr
 import yfinance as yf
 yf.pdr_override()

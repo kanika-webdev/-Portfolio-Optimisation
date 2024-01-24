@@ -2,7 +2,7 @@ import pandas as pd
 import quandl
 import matplotlib.pyplot as plt
 import math
-
+# This file calculate the vaiance_calculator
 def variance_calculator(series, series_average, win_len):
     sma = win_len
     temp = series.subtract(series_average) # Difference a-b
